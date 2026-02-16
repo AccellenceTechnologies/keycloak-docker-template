@@ -1,0 +1,221 @@
+{
+  "realm" : "test",
+  "users" : [ {
+    "id" : "8cd7a186-7269-4efd-a994-7f225f8afa8f",
+    "createdTimestamp" : 1764076899366,
+    "username" : "administrator",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "federationLink" : "40b48715-08b7-41ea-a19a-5ab94c9cc5f3",
+    "attributes" : {
+      "LDAP_ENTRY_DN" : [ "CN=Administrator,CN=Users,DC=oauthtest,DC=local" ],
+      "LDAP_ID" : [ "0c4dbb3e-0122-4a92-b579-ee516cb56c03" ],
+      "modifyTimestamp" : [ "20251124152423.0Z" ],
+      "createTimestamp" : [ "20251114130359.0Z" ]
+    },
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ "/Schema Admins", "/Domain Admins", "/Group Policy Creator Owners", "/Enterprise Admins" ]
+  }, {
+    "id" : "a162f91c-8651-4fca-8709-d345b54a6e36",
+    "createdTimestamp" : 1764076899371,
+    "username" : "guest",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "federationLink" : "40b48715-08b7-41ea-a19a-5ab94c9cc5f3",
+    "attributes" : {
+      "LDAP_ENTRY_DN" : [ "CN=Guest,CN=Users,DC=oauthtest,DC=local" ],
+      "LDAP_ID" : [ "f7edb142-e476-45d1-b104-d696ff2f911f" ],
+      "modifyTimestamp" : [ "20251114130359.0Z" ],
+      "createTimestamp" : [ "20251114130359.0Z" ]
+    },
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "f934c07b-d412-4003-9928-b3e5f45c809e",
+    "createdTimestamp" : 1764076899381,
+    "username" : "keycloak service",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Keycloak",
+    "lastName" : "Service",
+    "federationLink" : "40b48715-08b7-41ea-a19a-5ab94c9cc5f3",
+    "attributes" : {
+      "LDAP_ENTRY_DN" : [ "CN=Keycloak Service,CN=Users,DC=oauthtest,DC=local" ],
+      "LDAP_ID" : [ "b3b01ced-9e9d-4fa2-8a09-6d31f485f7e5" ],
+      "modifyTimestamp" : [ "20251127174328.0Z" ],
+      "createTimestamp" : [ "20251114142800.0Z" ]
+    },
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ "/Domain Admins" ]
+  }, {
+    "id" : "dabfc9b1-0fcf-4c67-a6a3-ee333753e978",
+    "createdTimestamp" : 1764076899376,
+    "username" : "krbtgt",
+    "enabled" : false,
+    "totp" : false,
+    "emailVerified" : false,
+    "federationLink" : "40b48715-08b7-41ea-a19a-5ab94c9cc5f3",
+    "attributes" : {
+      "LDAP_ENTRY_DN" : [ "CN=krbtgt,CN=Users,DC=oauthtest,DC=local" ],
+      "LDAP_ID" : [ "42db0ce4-1fbb-4a14-b4ec-684363a17963" ],
+      "modifyTimestamp" : [ "20251114131946.0Z" ],
+      "createTimestamp" : [ "20251114130433.0Z" ]
+    },
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ "/Denied RODC Password Replication Group" ]
+  }, {
+    "id" : "254a00b5-b504-4e36-b768-85c89769776b",
+    "createdTimestamp" : 1764076416508,
+    "username" : "testuser",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "testuser",
+    "email" : "testuser@oauthtest.local",
+    "federationLink" : "40b48715-08b7-41ea-a19a-5ab94c9cc5f3",
+    "attributes" : {
+      "LDAP_ENTRY_DN" : [ "CN=testuser,CN=Users,DC=oauthtest,DC=local" ],
+      "LDAP_ID" : [ "271b2c8f-8f70-40da-89f9-25eefde66812" ],
+      "modifyTimestamp" : [ "20251125104530.0Z" ],
+      "createTimestamp" : [ "20251114142933.0Z" ]
+    },
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ "/vimaccBetriebsrat" ]
+  }, {
+    "id" : "c2586221-89c0-40d6-b346-dde6decf3f62",
+    "createdTimestamp" : 1764076051362,
+    "username" : "testuser2",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "testuser2",
+    "federationLink" : "40b48715-08b7-41ea-a19a-5ab94c9cc5f3",
+    "attributes" : {
+      "LDAP_ENTRY_DN" : [ "CN=testuser2,CN=Users,DC=oauthtest,DC=local" ],
+      "LDAP_ID" : [ "44ed0289-5d4d-4559-b0e9-79d7142faa95" ],
+      "modifyTimestamp" : [ "20251125104639.0Z" ],
+      "createTimestamp" : [ "20251124152852.0Z" ]
+    },
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "f09ade62-5964-491d-ae58-bf018b687739",
+    "createdTimestamp" : 1764250415649,
+    "username" : "testuser3b",
+    "enabled" : true,
+    "totp" : true,
+    "emailVerified" : false,
+    "firstName" : "TestuserFirstName",
+    "lastName" : "TestUserLastname",
+    "federationLink" : "40b48715-08b7-41ea-a19a-5ab94c9cc5f3",
+    "attributes" : {
+      "LDAP_ENTRY_DN" : [ "CN=testuser3b,CN=Users,DC=oauthtest,DC=local" ],
+      "LDAP_ID" : [ "90d98d79-27f7-41ee-a7bc-d315034dd1f3" ],
+      "modifyTimestamp" : [ "20251127172337.0Z" ],
+      "createTimestamp" : [ "20251127133315.0Z" ]
+    },
+    "credentials" : [ {
+      "id" : "986ae638-a0cc-45f9-b8a0-9b1aa3dc6234",
+      "type" : "otp",
+      "userLabel" : "",
+      "createdDate" : 1764266850695,
+      "secretData" : "{\"value\":\"Ov6L2BVBvekwsTMfn3kK\"}",
+      "credentialData" : "{\"subType\":\"totp\",\"digits\":6,\"counter\":0,\"period\":30,\"algorithm\":\"HmacSHA1\"}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "c47d8886-f2ca-4962-863f-f20de0de123c",
+    "createdTimestamp" : 1764155842265,
+    "username" : "vimacc",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "federationLink" : "40b48715-08b7-41ea-a19a-5ab94c9cc5f3",
+    "attributes" : {
+      "LDAP_ENTRY_DN" : [ "CN=vimacc,CN=Users,DC=oauthtest,DC=local" ],
+      "LDAP_ID" : [ "bb435d89-507c-40ad-bfc4-016ceedbe459" ],
+      "modifyTimestamp" : [ "20251126111757.0Z" ],
+      "createTimestamp" : [ "20251126111658.0Z" ]
+    },
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "2879460b-0dfd-4e6f-ba2e-1db2e574f7e0",
+    "createdTimestamp" : 1764090034087,
+    "username" : "vimaccadm",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Vimacc",
+    "lastName" : "Admiral",
+    "federationLink" : "40b48715-08b7-41ea-a19a-5ab94c9cc5f3",
+    "attributes" : {
+      "LDAP_ENTRY_DN" : [ "CN=vimaccadm,CN=Users,DC=oauthtest,DC=local" ],
+      "LDAP_ID" : [ "645c17ec-4c00-4f5e-96d8-0e86103f7340" ],
+      "modifyTimestamp" : [ "20251125170034.0Z" ],
+      "createTimestamp" : [ "20251125170024.0Z" ]
+    },
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ "/vimaccAdmins" ]
+  }, {
+    "id" : "003045cb-9830-4c33-af48-4222defa0367",
+    "createdTimestamp" : 1764249785643,
+    "username" : "vimaccadm2",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "vimaccadm2",
+    "federationLink" : "40b48715-08b7-41ea-a19a-5ab94c9cc5f3",
+    "attributes" : {
+      "LDAP_ENTRY_DN" : [ "CN=vimaccadm2,CN=Users,DC=oauthtest,DC=local" ],
+      "LDAP_ID" : [ "25725b2e-67c7-46ec-9b8f-80a899b273f6" ],
+      "modifyTimestamp" : [ "20251127132344.0Z" ],
+      "createTimestamp" : [ "20251127132253.0Z" ]
+    },
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-test" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
