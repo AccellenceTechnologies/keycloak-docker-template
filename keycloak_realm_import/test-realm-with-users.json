@@ -405,6 +405,33 @@
   },
   "groups": [
     {
+      "id": "24ce93c7-51f4-47be-9981-b39f5cfb802d",
+      "name": "VMS-Admins",
+      "path": "/VMS-Admins",
+      "subGroups": [],
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {}
+    },
+    {
+      "id": "f6113b5a-a444-4978-b3b8-66a64b8117ff",
+      "name": "VMS-GDPR",
+      "path": "/VMS-GDPR",
+      "subGroups": [],
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {}
+    },
+    {
+      "id": "a1db50fe-33a2-46a0-b3db-fb2a8394cc6b",
+      "name": "VMS-Operators",
+      "path": "/VMS-Operators",
+      "subGroups": [],
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {}
+    },
+    {
       "id": "e00acc7a-eed0-42ca-9442-7ed28a24cc94",
       "name": "Allowed RODC Password Replication Group",
       "path": "/Allowed RODC Password Replication Group",
@@ -1717,304 +1744,6 @@
         }
       }
     ],
-    "org.keycloak.storage.UserStorageProvider": [
-      {
-        "id": "40b48715-08b7-41ea-a19a-5ab94c9cc5f3",
-        "name": "ldap",
-        "providerId": "ldap",
-        "subComponents": {
-          "org.keycloak.storage.ldap.mappers.LDAPStorageMapper": [
-            {
-              "id": "9c7097e0-e74c-4081-8672-60db2f24e12d",
-              "name": "modify date",
-              "providerId": "user-attribute-ldap-mapper",
-              "subComponents": {},
-              "config": {
-                "ldap.attribute": [
-                  "whenChanged"
-                ],
-                "is.mandatory.in.ldap": [
-                  "false"
-                ],
-                "read.only": [
-                  "true"
-                ],
-                "always.read.value.from.ldap": [
-                  "true"
-                ],
-                "user.model.attribute": [
-                  "modifyTimestamp"
-                ]
-              }
-            },
-            {
-              "id": "8e45df41-b471-4be8-97dd-07d919ecb661",
-              "name": "MSAD account controls",
-              "providerId": "msad-user-account-control-mapper",
-              "subComponents": {},
-              "config": {}
-            },
-            {
-              "id": "bd8b138a-bcb0-4fc4-9ac4-63874c722b67",
-              "name": "username",
-              "providerId": "user-attribute-ldap-mapper",
-              "subComponents": {},
-              "config": {
-                "ldap.attribute": [
-                  "cn"
-                ],
-                "is.mandatory.in.ldap": [
-                  "true"
-                ],
-                "attribute.force.default": [
-                  "true"
-                ],
-                "is.binary.attribute": [
-                  "false"
-                ],
-                "read.only": [
-                  "true"
-                ],
-                "always.read.value.from.ldap": [
-                  "false"
-                ],
-                "user.model.attribute": [
-                  "username"
-                ]
-              }
-            },
-            {
-              "id": "51343648-74a3-49b3-8e96-ffec8ad089ce",
-              "name": "email",
-              "providerId": "user-attribute-ldap-mapper",
-              "subComponents": {},
-              "config": {
-                "ldap.attribute": [
-                  "mail"
-                ],
-                "is.mandatory.in.ldap": [
-                  "false"
-                ],
-                "read.only": [
-                  "true"
-                ],
-                "always.read.value.from.ldap": [
-                  "false"
-                ],
-                "user.model.attribute": [
-                  "email"
-                ]
-              }
-            },
-            {
-              "id": "e040b041-dceb-45b3-8260-ae262dd310f7",
-              "name": "last name",
-              "providerId": "user-attribute-ldap-mapper",
-              "subComponents": {},
-              "config": {
-                "ldap.attribute": [
-                  "sn"
-                ],
-                "is.mandatory.in.ldap": [
-                  "true"
-                ],
-                "read.only": [
-                  "true"
-                ],
-                "always.read.value.from.ldap": [
-                  "true"
-                ],
-                "user.model.attribute": [
-                  "lastName"
-                ]
-              }
-            },
-            {
-              "id": "3b0460ea-bd2d-4c94-b6ad-cbe078543013",
-              "name": "first name",
-              "providerId": "user-attribute-ldap-mapper",
-              "subComponents": {},
-              "config": {
-                "ldap.attribute": [
-                  "givenName"
-                ],
-                "is.mandatory.in.ldap": [
-                  "true"
-                ],
-                "read.only": [
-                  "true"
-                ],
-                "always.read.value.from.ldap": [
-                  "true"
-                ],
-                "user.model.attribute": [
-                  "firstName"
-                ]
-              }
-            },
-            {
-              "id": "b6ae4bc8-906a-40e1-bff5-842ae25462f5",
-              "name": "creation date",
-              "providerId": "user-attribute-ldap-mapper",
-              "subComponents": {},
-              "config": {
-                "ldap.attribute": [
-                  "whenCreated"
-                ],
-                "is.mandatory.in.ldap": [
-                  "false"
-                ],
-                "always.read.value.from.ldap": [
-                  "true"
-                ],
-                "read.only": [
-                  "true"
-                ],
-                "user.model.attribute": [
-                  "createTimestamp"
-                ]
-              }
-            },
-            {
-              "id": "a9b677ec-0fd1-4b65-aa44-03aee74f8eac",
-              "name": "AD-Groups",
-              "providerId": "group-ldap-mapper",
-              "subComponents": {},
-              "config": {
-                "membership.attribute.type": [
-                  "DN"
-                ],
-                "group.name.ldap.attribute": [
-                  "cn"
-                ],
-                "preserve.group.inheritance": [
-                  "false"
-                ],
-                "membership.user.ldap.attribute": [
-                  "distinguishedName"
-                ],
-                "groups.dn": [
-                  "CN=Users,DC=oauthtest,DC=local"
-                ],
-                "mode": [
-                  "READ_ONLY"
-                ],
-                "user.roles.retrieve.strategy": [
-                  "LOAD_GROUPS_BY_MEMBER_ATTRIBUTE"
-                ],
-                "membership.ldap.attribute": [
-                  "member"
-                ],
-                "ignore.missing.groups": [
-                  "false"
-                ],
-                "group.object.classes": [
-                  "group"
-                ],
-                "memberof.ldap.attribute": [
-                  "memberOf"
-                ],
-                "drop.non.existing.groups.during.sync": [
-                  "false"
-                ],
-                "groups.path": [
-                  "/"
-                ]
-              }
-            }
-          ]
-        },
-        "config": {
-          "pagination": [
-            "false"
-          ],
-          "fullSyncPeriod": [
-            "-1"
-          ],
-          "startTls": [
-            "false"
-          ],
-          "connectionPooling": [
-            "false"
-          ],
-          "usersDn": [
-            "CN=Users,DC=oauthtest,DC=local"
-          ],
-          "cachePolicy": [
-            "DEFAULT"
-          ],
-          "useKerberosForPasswordAuthentication": [
-            "false"
-          ],
-          "importEnabled": [
-            "true"
-          ],
-          "enabled": [
-            "false"
-          ],
-          "bindDn": [
-            "CN=Keycloak Service,CN=Users,DC=oauthtest,DC=local"
-          ],
-          "bindCredential": [
-            "Accellence1!"
-          ],
-          "changedSyncPeriod": [
-            "30"
-          ],
-          "usernameLDAPAttribute": [
-            "cn"
-          ],
-          "lastSync": [
-            "1764343294"
-          ],
-          "vendor": [
-            "ad"
-          ],
-          "uuidLDAPAttribute": [
-            "objectGUID"
-          ],
-          "allowKerberosAuthentication": [
-            "false"
-          ],
-          "connectionUrl": [
-            "ldaps://DC1.oauthtest.local:636"
-          ],
-          "syncRegistrations": [
-            "true"
-          ],
-          "authType": [
-            "simple"
-          ],
-          "krbPrincipalAttribute": [
-            "userPrincipalName"
-          ],
-          "searchScope": [
-            "1"
-          ],
-          "useTruststoreSpi": [
-            "never"
-          ],
-          "usePasswordModifyExtendedOp": [
-            "false"
-          ],
-          "trustEmail": [
-            "false"
-          ],
-          "userObjectClasses": [
-            "person, organizationalPerson, user"
-          ],
-          "rdnLDAPAttribute": [
-            "cn"
-          ],
-          "editMode": [
-            "READ_ONLY"
-          ],
-          "validatePasswordPolicy": [
-            "false"
-          ]
-        }
-      }
-    ],
     "org.keycloak.keys.KeyProvider": [
       {
         "id": "27a2e0a1-2c48-43ee-83e3-116e594a9261",
@@ -2635,7 +2364,7 @@
       "name": "Configure OTP",
       "providerId": "CONFIGURE_TOTP",
       "enabled": true,
-      "defaultAction": true,
+      "defaultAction": false,
       "priority": 10,
       "config": {}
     },
@@ -2772,6 +2501,7 @@
       "totp": false,
       "emailVerified": true,
       "firstName": "testuser",
+      "lastName": "User",
       "email": "testuser@test.local",
       "credentials": [
         {
@@ -2783,9 +2513,14 @@
       "realmRoles": [
         "default-roles-test"
       ],
+      "clientRoles": {},
       "groups": [
-        "/vimaccBetriebsrat"
-      ]
+        "/vimaccBetriebsrat",
+        "/VMS-Admins",
+        "/VMS-Operators",
+        "/VMS-GDPR"
+      ],
+      "attributes": {}
     },
     {
       "id": "c2586221-89c0-40d6-b346-dde6decf3f62",
