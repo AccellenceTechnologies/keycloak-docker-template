@@ -337,8 +337,8 @@
   "groups" : [ 
      {
       "id": "24ce93c7-51f4-47be-9981-b39f5cfb802d",
-      "name": "VMS-Admins",
-      "path": "/VMS-Admins",
+      "name": "VMSAdmins",
+      "path": "/VMSAdmins",
       "subGroups": [],
       "attributes": {},
       "realmRoles": [],
@@ -346,8 +346,8 @@
     },
     {
       "id": "f6113b5a-a444-4978-b3b8-66a64b8117ff",
-      "name": "VMS-GDPR",
-      "path": "/VMS-GDPR",
+      "name": "VMSGDPR",
+      "path": "/VMSGDPR",
       "subGroups": [],
       "attributes": {},
       "realmRoles": [],
@@ -355,8 +355,8 @@
     },
     {
       "id": "a1db50fe-33a2-46a0-b3db-fb2a8394cc6b",
-      "name": "VMS-Operators",
-      "path": "/VMS-Operators",
+      "name": "VMSOperators",
+      "path": "/VMSOperators",
       "subGroups": [],
       "attributes": {},
       "realmRoles": [],
